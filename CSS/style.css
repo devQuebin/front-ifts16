@@ -1,12 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+body.dark-mode {
+  --background-color: #393939;
+  --text-color: #ffffff;
+}
+
+.navbar {
+  background: linear-gradient(to right, #0000ff, #4f0090);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 2vh;
+}
+.navbar .logo {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
-h1 {
-  background-color: yellow;
+.nav-links li {
+  margin: 0 1rem;
 }
 
-p {
-  font-size: 1cm;
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.nav-links a.active {
+  background-color: white;
+  color: #0000ff;
+  border-radius: 5px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+#dark-mode-toggle {
+  margin-left: 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+  background-color: white;
+  color: #0000ff;
+}
+
+.inicio {
+  font-size: 2rem;
+  padding: 4rem;
+  text-align: start;
+}
+
+.inicio h1 {
+  margin-bottom: 1rem;
+}
+
+.flex-inicio {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.inicio-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 2rem;
+}
+
+.edIcon {
+  height: 140px;
+  margin: 8px;
+}
+
+.fotok {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 480px;
+}
+
+.inicio p {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: end;
+  padding: 1vh;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
