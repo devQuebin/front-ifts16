@@ -4,13 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IFTS16</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body>
-    <h1>TITULO</h1>
-    <p>Texto de prueba</p>
-    <p>Hola pais como estas</p>
-    <p>otro p</p>
-    <footer>hola este es un footer</footer>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Kevin Matsuda</a>
+      <div class="navbar-right">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="education.html">Educación</a></li>
+          <li><a href="workexp.html">Experiencia</a></li>
+        </ul>
+        <button id="dark-mode-toggle">Modo Oscuro</button>
+      </div>
+    </nav>
+    <section class="inicio">
+      <h1>Bienvenido a mi Portfolio</h1>
+      <div class="flex-inicio">
+        <img class="fotok" src="./public/kevinbn.png" alt="foto kevin" />
+        <div class="inicio-texto">
+          <p>
+            Soy Kevin Matsuda. Me egrese en el 2015 como diseñador industrial y
+            durante la pandemia comencé a estudiar desarrollo web por sugerencia
+            de un amigo. Hoy en día trabajo full time como desarrollador de
+            software y me encuentro terminando la tecnicatura de desarrollo de
+            software. Fue y será vital para mi desarollo profesional el trabajo
+            en equipo y trabajar constantemente mis habilidades de comunicación.
+          </p>
+          <br />
+          <h6>Contacto</h6>
+          <p>e-mail: matsuda.m.kevin@gmail.com</p>
+          <p>
+            linkedin:
+            <a href="https://www.linkedin.com/in/matsudamkevin/">LINK</a>
+          </p>
+          <p>github: <a href="https://github.com/devQuebin">LINK</a></p>
+          <br />
+          <p>
+            Este es un sitio estatico de html y css y js para el modo oscuro. Te
+            invito a conocer mi sitio de
+            <a href="https://reactportfolio-77ce8.web.app/">React.js (2021)</a>
+            y mi otro sitio de Next.js
+          </p>
+          <br />
+          <p>
+            Te invito a conocer la seccion de mi educación y experiencia
+            laboral.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>IFTS n°16 Front end 2024</p>
+    </footer>
+    <script src="/JS/script.js"></script>
   </body>
 </html>
